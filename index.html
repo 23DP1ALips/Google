@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Home Page</title>
+    <title>Google</title>
     <link rel="icon" type="image/x-icon" href="src/img/Google__G__logo.svg.png">
     <link rel="stylesheet" href="src/css/main.css">
-    <script>
-        function performSearch(event) {
-            if (event.key === 'Enter') {
-                const query = document.getElementById('search-input').value;
-                if (query.trim()) {
-                    const googleSearchUrl = `https://www.google.co.uk/search?q=${encodeURIComponent(query)}`;
-                    window.location.href = googleSearchUrl;
-                }
-            }
-        }
-    </script>
 </head>
 <body>
     <div class="top-bar">
         <a href="#">Gmail</a>
-        <a href="#">Images</a>
+        <a onclick="window.location.href='https://www.google.co.uk/imghp?hl=eng&ogbl';" href="#">Images</a>
         <img src="src/img/apps_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Google Apps Icon">
         <div class="sign-in">Sign In</div>
     </div>
 
     <div class="logo">
-        <img src="src/img/google-removebg-preview.png" alt="Google Logo">
+        <img src="src/img/google-removebg-preview.png">
     </div>
 
     <div class="search-bar">
         <img src="src/img/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Search Icon" class="search-icon">
-        <input id="search-input" type="text" placeholder="Search Google or type a URL" onkeydown="performSearch(event)">
+        <input type="text" placeholder="Search Google or type a URL">
         <div class="icon-container">
             <img src="src/img/keyboard_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Floating keyboard icon">
             <img src="src/img/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Search by voice icon">
@@ -41,8 +30,8 @@
     </div>
 
     <div class="buttons">
-        <button>Search in Google</button>
-        <button>I feel lucky!</button>
+        <button onclick="window.location.href='https://www.google.com/';" class="GFG">Search in Google</button>
+        <button onclick="window.location.href='https://doodles.google/';" class="GFG">I feel lucky!</button>
     </div>
 </body>
 </html>
